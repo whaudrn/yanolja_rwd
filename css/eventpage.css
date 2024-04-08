@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "NanumSquare", sans-serif;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 400px;
+  
+}
+header {
+  text-align: center;
+  position: relative;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.back img {
+  width: 30px;
+  pointer-events: auto;
+}
+.back a {
+  width: 30px;
+  height: 30px;
+}
+
+h1 img {
+  margin-top: 15px;
+  width: 80px;
+}
+.eventpage img{
+  display: block;
+  width: 100%;
+}

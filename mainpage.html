@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mainpage.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-slide.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/ham-menu.js"></script>
+    <script src="js/m_search_page.js"></script>
+    <script src="js/search_box.js"></script>
+    <script src="js/mainpage.js"></script>
+  </head>
+  <script></script>
+  <body>
+    <header>
+      <div class="head">
+        <div class="m_head">
+          <div class="m_logo">
+            <h1>
+              <a id="m_logo" href="index.html"><img src="img/logo/logo2.png" alt="mobile-logo" /></a>
+            </h1>
+          </div>
+          <div class="ham" onclick="rotateHam()">
+            <ul>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 햄버거 페이지 시작 -->
+
+      <div class="ham-page">
+        <div class="login">
+          <ul>
+            <li id="loginimg">
+              <a href="javascript:;"><img src="img/icon/login1.png" alt="login-icon" /></a>
+            </li>
+            <li><a href="member.html">로그인&nbsp;</a></li>
+            <li><a href="javascript:;">/ 회원가입</a></li>
+          </ul>
+        </div>
+        <div class="line1"></div>
+        <div class="ham-page-textmenu">
+          <ul>
+            <li><a href="javascript:;">고객센터</a></li>
+            <li><a href="javascript:;">비회원 예약조회</a></li>
+          </ul>
+        </div>
+        <div class="line1"></div>
+        <div class="icon-menu">
+          <ul>
+            <li>
+              <a href="air.html"><img src="img/icon/air1.png" alt="air_icon" /><br /><b>항공</b></a>
+            </li>
+            <li>
+              <a href="train.html"><img src="img/icon/train1.png" alt="train_icon" /><br /><b>KTX/기차</b></a>
+            </li>
+            <li>
+              <a href="bus.html"><img src="img/icon/bus1.png" alt="bus_icon" /><br /><b>고속버스</b></a>
+            </li>
+            <li>
+              <a href="rent.html"><img src="img/icon/rent1.png" alt="rentcar_icon" /><br /><b>렌터카</b></a>
+            </li>
+            <li>
+              <a href="leisure.html"><img src="img/icon/ticket1.png" alt="ticket_icon" /><br /><b>레저/티켓</b></a>
+            </li>
+          </ul>
+        </div>
+        <div class="appdown">
+          <a href="javascript:;">앱 다운 후 더 많은 혜택 받기!</a>
+        </div>
+      </div>
+
+      <!-- 테블릿,pc head 시작 -->
+
+      <div class="tab_head">
+        <div class="tab_logo">
+          <h1>
+            <a class="tp_logo" href="index.html"><img src="img/logo/tp-logo.png" alt="logo" /></a>
+          </h1>
+        </div>
+        <div class="tab_head-menu">
+          <ul class="tab_menu_text">
+            <li><a href="member.html">로그인/회원가입</a></li>
+            <li><a href="javascript:;">고객센터</a></li>
+            <li><a href="javascript:;">비회원 예약조회</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pc_head">
+        <div class="pc_logo">
+          <h1>
+            <a class="tp_logo" href="index.html"><img src="img/logo/tp-logo.png" alt="logo" /></a>
+          </h1>
+        </div>
+        <div class="pc_head-menu">
+          <ul class="pc_menu_text">
+            <li>
+              <a href="member.html"><span>로그인/회원가입</span>&nbsp;&nbsp;|</a>
+            </li>
+            <li>
+              <a href="javascript:;"><span>고객센터</span>&nbsp;&nbsp;|</a>
+            </li>
+            <li>
+              <a href="javascript:;"><span>비회원 예약조회</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <ul class="tab_menu_icon">
+          <li>
+            <a href="air.html"><img src="img/icon/air1.png" alt="air_icon" /><br /><b>항공</b></a>
+          </li>
+          <li>
+            <a href="train.html"><img src="img/icon/train1.png" alt="train_icon" /><br /><b>KTX/기차</b></a>
+          </li>
+          <li>
+            <a href="bus.html"><img src="img/icon/bus1.png" alt="bus_icon" /><br /><b>고속버스</b></a>
+          </li>
+          <li>
+            <a href="rent.html"><img src="img/icon/rent1.png" alt="rentcar_icon" /><br /><b>렌터카</b></a>
+          </li>
+          <li>
+            <a href="leisure.html"><img src="img/icon/ticket1.png" alt="ticket_icon" /><br /><b>레저/티켓</b></a>
+          </li>
+        </ul>
+      </div>
+  <!-- 모바일 검색창 오픈 페이지 -->
+  <div id="search">
+    <div class="m_search">
+      <input id="destination" type="text" placeholder="놀러 갈 여행지를 정하셨나요?" />
+      <div class="m_search_page">
+        <div class="m_search_page_close">
+          <img src="img/icon/close.png" alt="m_search_page_close-button" />
+        </div>
+        <div class="m_search_page_wrap">
+          <div class="m_search_page_selectbutton">
+            <ul>
+              <li id="select-domestic"><a href="javascript:;">국내</a></li>
+              <li id="select-overseas"><a href="javascript:;">해외</a></li>
+            </ul>
+          </div>
+          <div class="m_search_page_destination">
+            <input type="text" placeholder="어디로 갈까요?" />
+            <button class="change">변경하기</button>
+          </div>
+          <div class="m_search_page_checkin">
+            <ul>
+              <li><input type="text" class="m_checkin" name="m_checkin" placeholder="체크인" /></li>
+              <li><button class="change">변경하기</button></li>
+            </ul>
+          </div>
+          <div class="m_search_page_checkout">
+            <ul>
+              <li><input type="text" class="m_checkout" name="m_checkout" placeholder="체크아웃" /></li>
+              <li><button class="change">변경하기</button></li>
+            </ul>
+          </div>
+          <div class="m_search_page_people">
+            <ul>
+              <!-- --------------------------------------------------- 모바일-------------------------------------- -->
+
+              <div class="m_dropdown" id="mobile_dropdown">
+                <div class="m_dropdown_toggle" onclick="toggleDropdown('mobile')">인원수</div>
+                <div class="m_dropdown_content">
+                  <div class="m_guest_type">
+                    <div class="m_guest_label">성인 (13세이상)</div>
+                    <div class="m_btn_box">
+                      <button class="m_btn_decrement" onclick="decrement('mobile', 'adult')">-</button>
+                      <div class="m_guest_count" id="mobile_adult_count">&nbsp;0&nbsp;</div>
+                      <button class="m_btn_increment" onclick="increment('mobile', 'adult')">+</button>
+                    </div>
+                  </div>
+                  <div class="m_guest_type">
+                    <div class="m_guest_label">어린이 (13세미만)</div>
+                    <div class="m_btn_box">
+                      <button class="m_btn_decrement" onclick="decrement('mobile', 'child')">-</button>
+                      <div class="m_guest_count" id="mobile_child_count">&nbsp;0&nbsp;</div>
+                      <button class="m_btn_increment" onclick="increment('mobile', 'child')">+</button>
+                    </div>
+                  </div>
+                  <div class="m_guest_type">
+                    <div class="m_guest_label">반려동물</div>
+                    <div class="m_btn_box">
+                      <button class="m_btn_decrement" onclick="decrement('mobile', 'pet')">-</button>
+                      <div class="m_guest_count" id="mobile_pet_count">&nbsp;0&nbsp;</div>
+                      <button class="m_btn_increment" onclick="increment('mobile', 'pet')">+</button>
+                    </div>
+                  </div>
+                  <div class="m_reset">
+                    <a href="#" onclick="resetCounts('mobile')">초기화</a>
+                  </div>
+                </div>
+              </div>
+              <li><button class="change">변경하기</button></li>
+            </ul>
+          </div>
+          <div class="m_search_page_filter">
+            <ul>
+              <li>
+                <img src="img/icon/filter1.png" alt="m_search_page_filter" />
+              </li>
+              <li><a href="javascript:;">필터추가</a></li>
+              <!-- <li><a href="javascript:;">초기화</a></li> -->
+            </ul>
+            <div class="m_search_page_submit">
+              <a href="javascript:;">검색하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tab pc 검색창 통일 -->
+    <div class="tab_search_box">
+      <div class="tab_search_wrap">
+        <div class="tab_destination">
+          <input type="text" placeholder="놀러 갈 여행지를 정하셨나요?" />
+        </div>
+        <div class="tab_check">
+          <ul>
+            <li>
+              <input type="text" class="checkin" name="checkin" placeholder="체크인" />
+            </li>
+            <li>
+              <input type="text" class="checkout" name="checkout" placeholder="체크아웃" />
+            </li>
+
+            <!-- --------------------------------------------피씨---------------------------------------------------- -->
+
+            <li class="dropdown" id="pc_dropdown">
+              <div class="dropdown_toggle" onclick="toggleDropdown('pc')">인원수</div>
+              <div class="dropdown_content">
+                <div class="guest_type">
+                  <div class="guest_label">성인 (13세이상)</div>
+                  <div class="btn_box">
+                    <button class="btn_decrement" onclick="decrement('pc', 'adult')">-</button>
+                    <div class="guest_count" id="pc_adult_count">&nbsp;0&nbsp;</div>
+                    <button class="btn_increment" onclick="increment('pc', 'adult')">+</button>
+                  </div>
+                </div>
+                <div class="guest_type">
+                  <div class="guest_label">어린이 (13세미만)</div>
+                  <div class="btn_box">
+                    <button class="btn_decrement" onclick="decrement('pc', 'child')">-</button>
+                    <div class="guest_count" id="pc_child_count">&nbsp;0&nbsp;</div>
+                    <button class="btn_increment" onclick="increment('pc', 'child')">+</button>
+                  </div>
+                </div>
+                <div class="guest_type">
+                  <div class="guest_label">반려동물</div>
+                  <div class="btn_box">
+                    <button class="btn_decrement" onclick="decrement('pc', 'pet')">-</button>
+                    <div class="guest_count" id="pc_pet_count">&nbsp;0&nbsp;</div>
+                    <button class="btn_increment" onclick="increment('pc', 'pet')">+</button>
+                  </div>
+                </div>
+                <div class="reset">
+                  <a href="#" onclick="resetCounts('pc')">초기화</a>
+                </div>
+              </div>
+            </li>
+            <li id="tab_search"><a href="javascript:;">검색</a></li>
+          </ul>
+        </div>
+        <div class="tab_filter">
+          <a href="javascript:;"><img src="img/icon/filter1.png" alt="filter" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </header>
+
+    <!-- 섹션 시작 -->
+
+    <section>
+      <div class="filter">
+        <div class="select-box">
+          <select id="roomtype">
+            <option value="ALL">숙소종류</option>
+            <option value="hotel">호텔</option>
+            <option value="motel">모텔</option>
+            <option value="pension">펜션</option>
+            <option value="poolvilla">풀빌라</option>
+            <option value="guesthouse">게스트하우스</option>
+          </select>
+          <select id="reservationtype">
+            <option value="ALL">예약유형</option>
+            <option value="full">숙박</option>
+            <option value="half">대실</option>
+          </select>
+          <select id="grade">
+            <option value="ALL">등급</option>
+            <option value="3star">3성급 이상</option>
+            <option value="4star">4성급 이상</option>
+            <option value="5star">5성급</option>
+          </select>
+          <select id="bed">
+            <option value="ALL">침대</option>
+            <option value="1bed">1개 이상</option>
+            <option value="2bed">2개 이상</option>
+            <option value="3bed">3개 이상</option>
+          </select>
+          <select id="bath">
+            <option value="ALL">욕실</option>
+            <option value="1bath">1개 이상</option>
+            <option value="2bath">2개 이상</option>
+            <option value="3bath">3개 이상</option>
+          </select>
+          <select id="order">
+            <option value="score">평점순</option>
+            <option value="review">리뷰순</option>
+            <option value="hprice">높은가격순</option>
+            <option value="lprice">낮은가격순</option>
+          </select>
+        </div>
+        <div class="select-reset">
+          <p>초기화</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="room">
+        <ul>
+          <li data-score="9.6" data-review="919" data-price="220000">
+            <img src="img/jeju/jeju-hotel1.jpg" data-tags="hotel,full,3star,4star,5star,1bed,2bed,3bed,1bath" alt="juju-hotel1" />
+            <span class="roomname">히든클리프 호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.6</span><br />
+              <span class="review">리뷰(919)</span><br />
+            </div>
+            <span class="price"><b>220,000원~</b></span>
+          </li>
+          <li data-score="9.1" data-review="511" data-price="186000">
+            <img src="img/jeju/jeju-hotel2.jpg" data-tags="hotel,full,3star,4star,5star,2bed,1bath" alt="juju-hotel2" />
+            <span class="roomname">파르나스 호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.1</span><br />
+              <span class="review">리뷰(511)</span><br />
+            </div>
+            <span class="price"><b>186,000원~</b></span>
+          </li>
+          <li data-score="8.5" data-review="1453" data-price="51000">
+            <img src="img/jeju/jeju-hotel3.jpg" data-tags="hotel,full,3star,1bed,1bath" alt="juju-hotel3" />
+            <span class="roomname">베니키아 호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.5</span><br />
+              <span class="review">리뷰(1453)</span><br />
+            </div>
+            <span class="price"><b>51,000원~</b></span>
+          </li>
+          <li data-score="9.2" data-review="698" data-price="140000">
+            <img src="img/jeju/jeju-hotel4.jpg" data-tags="hotel,full,3star,4star,1bed,1bath" alt="juju-hotel4" />
+            <span class="roomname">제주썬 호텔&카지노</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.2</span><br />
+              <span class="review">리뷰(698)</span><br />
+            </div>
+            <span class="price"><b>140,000원~</b></span>
+          </li>
+          <li data-score="9.7" data-review="336" data-price="178000">
+            <img src="img/jeju/jeju-hotel5.jpg" data-tags="hotel,full,3star,4star,3bed,3bath" alt="juju-hotel5" />
+            <span class="roomname">라마다 프라자 제주</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.7</span><br />
+              <span class="review">리뷰(336)</span><br />
+            </div>
+            <span class="price"><b>178,000원~</b></span>
+          </li>
+          <li data-score="9.9" data-review="936" data-price="184140">
+            <img src="img/jeju/jeju-hotel6.jpg" data-tags="hotel,full,3star,4star,2bed,2bath" alt="juju-hotel6" />
+            <span class="roomname">신라스테이 제주</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.9</span><br />
+              <span class="review">리뷰(936)</span><br />
+            </div>
+            <span class="price"><b>184,140원~</b></span>
+          </li>
+          <li data-score="8.4" data-review="1157" data-price="257130">
+            <img src="img/jeju/jeju-hotel7.jpg" data-tags="hotel,full,3star,4star,5star,1bed,1bath" alt="juju-hotel7" />
+            <span class="roomname">해비치 호텔&리조트</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.4</span><br />
+              <span class="review">리뷰(1157)</span><br />
+            </div>
+            <span class="price"><b>257,130원~</b></span>
+          </li>
+          <li data-score="9.9" data-review="1477" data-price="305800">
+            <img src="img/jeju/jeju-hotel8.jpg" data-tags="hotel,full,3star,4star,5star,2bed,1bath" alt="juju-hotel8" />
+            <span class="roomname">그랜드 하얏트 제주</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.9</span><br />
+              <span class="review">리뷰(1477)</span><br />
+            </div>
+            <span class="price"><b>305,800원~</b></span>
+          </li>
+          <li data-score="9.3" data-review="1055" data-price="55000">
+            <img src="img/jeju/jeju-hotel9.jpg" data-tags="hotel,full,3star,1bed,1bath" alt="juju-hotel9" />
+            <span class="roomname">제주인호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.3</span><br />
+              <span class="review">리뷰(1055)</span><br />
+            </div>
+            <span class="price"><b>55,000원~</b></span>
+          </li>
+          <li data-score="7.9" data-review="312" data-price="92500">
+            <img src="img/jeju/jeju-hotel10.jpg" data-tags="hotel,full,3star,1bed,1bath" alt="juju-hotel10" />
+            <span class="roomname">제주 호텔 더 원</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />7.9</span><br />
+              <span class="review">리뷰(312)</span><br />
+            </div>
+            <span class="price"><b>92,500원~</b></span>
+          </li>
+          <li data-score="9.9" data-review="2144" data-price="89000">
+            <img src="img/jeju/jeju-pension1.jpg" data-tags="pension,full,1bed,1bath" alt="juju-pension1" />
+            <span class="roomname">엘쯔타운 펜션</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.9</span><br />
+              <span class="review">리뷰(2144)</span><br />
+            </div>
+            <span class="price"><b>89,000원~</b></span>
+          </li>
+          <li data-score="9.1" data-review="514" data-price="144500">
+            <img src="img/jeju/jeju-pension2.jpg" data-tags="pension,full,1bed,2bed,1bath,2bath" alt="juju-pension2" />
+            <span class="roomname">엠스테이 펜션</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.9</span><br />
+              <span class="review">리뷰(2144)</span><br />
+            </div>
+            <span class="price"><b>144,500원~</b></span>
+          </li>
+          <li data-score="6.9" data-review="1156" data-price="137740">
+            <img src="img/jeju/jeju-pension3.jpg" data-tags="pension,full,1bed,2bed,1bath,2bath" alt="juju-pension3" />
+            <span class="roomname">스테이얼타 펜션</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />6.9</span><br />
+              <span class="review">리뷰(1156)</span><br />
+            </div>
+            <span class="price"><b>137,740원~</b></span>
+          </li>
+          <li data-score="8.8" data-review="771" data-price="485000">
+            <img src="img/jeju/jeju-pension4.jpg" data-tags="pension,full,1bed,2bed,3bed,1bath,2bath,3bath" alt="juju-pension4" />
+            <span class="roomname">369 펜션(독채)</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.8</span><br />
+              <span class="review">리뷰(771)</span><br />
+            </div>
+            <span class="price"><b>485,000원~</b></span>
+          </li>
+          <li data-score="9.0" data-review="1331" data-price="126100">
+            <img src="img/jeju/jeju-pension5.jpg" data-tags="pension,full,1bed,2bed,1bath,2bath" alt="juju-pension5" />
+            <span class="roomname">하얀고래별장 펜션</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.0</span><br />
+              <span class="review">리뷰(1331)</span><br />
+            </div>
+            <span class="price"><b>126,100원~</b></span>
+          </li>
+          <li data-score="7.7" data-review="963" data-price="155200">
+            <img src="img/jeju/jeju-pension6.jpg" data-tags="pension,full,1bed,2bed,1bath,2bath" alt="juju-pension6" />
+            <span class="roomname">우도모닝 펜션</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />7.7</span><br />
+              <span class="review">리뷰(771)</span><br />
+            </div>
+            <span class="price"><b>155,200원~</b></span>
+          </li>
+          <li data-score="8.7" data-review="1577" data-price="50000">
+            <img src="img/jeju/jeju-motel1.jpg" data-tags="motel,full,half,1bed,2bed,1bath,2bath" alt="juju-motel1" />
+            <span class="roomname">서귀포 아리아 호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.7</span><br />
+              <span class="review">리뷰(1577)</span><br />
+            </div>
+            <span class="price"><b>50,000원~</b></span>
+          </li>
+          <li data-score="6.7" data-review="659" data-price="20000">
+            <img src="img/jeju/jeju-motel2.jpg" data-tags="motel,full,half,1bed,1bath" alt="juju-motel2" />
+            <span class="roomname">서귀포 록산모텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />6.7</span><br />
+              <span class="review">리뷰(659)</span><br />
+            </div>
+            <span class="price"><b>20,000원~</b></span>
+          </li>
+          <li data-score="9.5" data-review="1787" data-price="45000">
+            <img src="img/jeju/jeju-motel3.jpg" data-tags="motel,full,half,1bed,2bed,1bath,2bath" alt="juju-motel3" />
+            <span class="roomname">서귀포 오렌지모텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.5</span><br />
+              <span class="review">리뷰(1787)</span><br />
+            </div>
+            <span class="price"><b>45,000원~</b></span>
+          </li>
+          <li data-score="9.1" data-review="3345" data-price="40000">
+            <img src="img/jeju/jeju-motel1.jpg" data-tags="motel,full,half,1bed,1bath" alt="juju-motel4" />
+            <span class="roomname">제주 송원모텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.1</span><br />
+              <span class="review">리뷰(3345)</span><br />
+            </div>
+            <span class="price"><b>40,000원~</b></span>
+          </li>
+          <li data-score="9.9" data-review="1677" data-price="69000">
+            <img src="img/jeju/jeju-motel6.jpg" data-tags="motel,full,half,1bed,2bed,1bath,2bath" alt="juju-motel6" />
+            <span class="roomname">제이뷰 호텔</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.9</span><br />
+              <span class="review">리뷰(1677)</span><br />
+            </div>
+            <span class="price"><b>69,000원~</b></span>
+          </li>
+          <li data-score="9.8" data-review="2544" data-price="430000">
+            <img src="img/jeju/jeju-poolvilla1.jpg" data-tags="poolvilla,full,1bed,2bed,1bath,2bath" alt="juju-poolvilla1" />
+            <span class="roomname">제주 까르마 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.8</span><br />
+              <span class="review">리뷰(2544)</span><br />
+            </div>
+            <span class="price"><b>430,000원~</b></span>
+          </li>
+          <li data-score="9.2" data-review="1178" data-price="179000">
+            <img src="img/jeju/jeju-poolvilla2.jpg" data-tags="poolvilla,full,1bed,2bed,1bath,2bath" alt="juju-poolvilla2" />
+            <span class="roomname">제주 108윈드밀 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.2</span><br />
+              <span class="review">리뷰(1178)</span><br />
+            </div>
+            <span class="price"><b>179,000원~</b></span>
+          </li>
+          <li data-score="8.4" data-review="755" data-price="117650">
+            <img src="img/jeju/jeju-poolvilla3.jpg" data-tags="poolvilla,full,1bed,2bed,1bath" alt="juju-poolvilla3" />
+            <span class="roomname">제주 메종드 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.4</span><br />
+              <span class="review">리뷰(755)</span><br />
+            </div>
+            <span class="price"><b>117,650원~</b></span>
+          </li>
+          <li data-score="8.6" data-review="479" data-price="126000">
+            <img src="img/jeju/jeju-poolvilla4.jpg" data-tags="poolvilla,full,1bed,2bed,1bath,2bath" alt="juju-poolvilla4" />
+            <span class="roomname">서귀포 팜밸리 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.6</span><br />
+              <span class="review">리뷰(479)</span><br />
+            </div>
+            <span class="price"><b>126,000원~</b></span>
+          </li>
+          <li data-score="9.5" data-review="2241" data-price="150000">
+            <img src="img/jeju/jeju-poolvilla5.jpg" data-tags="poolvilla,full,1bed,2bed,1bath,2bath" alt="juju-poolvilla5" />
+            <span class="roomname">서귀포 아띠랑스 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.5</span><br />
+              <span class="review">리뷰(2241)</span><br />
+            </div>
+            <span class="price"><b>150,000원~</b></span>
+          </li>
+          <li data-score="9.3" data-review="1169" data-price="210000">
+            <img src="img/jeju/jeju-poolvilla6.jpg" data-tags="poolvilla,full,1bed,2bed,1bath,2bath" alt="juju-poolvilla6" />
+            <span class="roomname">서귀포 스테이디앤디 풀빌라</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.3</span><br />
+              <span class="review">리뷰(1169)</span><br />
+            </div>
+            <span class="price"><b>210,000원~</b></span>
+          </li>
+          <li data-score="9.0" data-review="889" data-price="50000">
+            <img src="img/jeju/jeju-guesthouse1.jpg" data-tags="guesthouse,full,1bed,2bed,1bath,2bath" alt="juju-guesthouse1" />
+            <span class="roomname">제주 토다 게스트하우스</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.0</span><br />
+              <span class="review">리뷰(889)</span><br />
+            </div>
+            <span class="price"><b>50,000원~</b></span>
+          </li>
+          <li data-score="9.7" data-review="2214" data-price="25000">
+            <img src="img/jeju/jeju-guesthouse2.jpg" data-tags="guesthouse,full,1bed,2bed,1bath,2bath" alt="juju-guesthouse2" />
+            <span class="roomname">제주 간드락 게스트하우스</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.7</span><br />
+              <span class="review">리뷰(2214)</span><br />
+            </div>
+            <span class="price"><b>25,000원~</b></span>
+          </li>
+          <li data-score="9.6" data-review="2136" data-price="28000">
+            <img src="img/jeju/jeju-guesthouse3.jpg" data-tags="guesthouse,full,1bed,2bed,1bath,2bath" alt="juju-guesthouse3" />
+            <span class="roomname">제주 끌림365 게스트하우스</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />9.6</span><br />
+              <span class="review">리뷰(2136)</span><br />
+            </div>
+            <span class="price"><b>28,000원~</b></span>
+          </li>
+          <li data-score="8.9" data-review="997" data-price="49000">
+            <img src="img/jeju/jeju-guesthouse4.jpg" data-tags="guesthouse,full,1bed,2bed,1bath,2bath" alt="juju-guesthouse4" />
+            <span class="roomname">제주 그디글라 게스트하우스</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.9</span><br />
+              <span class="review">리뷰(997)</span><br />
+            </div>
+            <span class="price"><b>49,000원~</b></span>
+          </li>
+          <li data-score="8.7" data-review="2235" data-price="48000">
+            <img src="img/jeju/jeju-guesthouse5.jpg" data-tags="guesthouse,full,1bed,2bed,1bath,2bath" alt="juju-guesthouse5" />
+            <span class="roomname">제주 쉬다가게 게스트하우스</span><br />
+            <div class="score-review">
+              <span class="score"><img src="img/icon/star.jpg" alt="score-star" />8.7</span><br />
+              <span class="review">리뷰(2235)</span><br />
+            </div>
+            <span class="price"><b>48,000원~</b></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer 시작 -->
+
+    <footer>
+      <div class="m_footer">
+        <div class="foot_logo">
+          <a href="index.html"><img src="img/logo/footer_logo.png" alt="footer_logo" class="foot_logo" /></a>
+        </div>
+        <div class="foot_sns">
+          <ul>
+            <li>
+              <div>
+                <a href="javascript:;"><img src="img/icon/twiter1.png" alt="twiter" class="twiter" /></a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;"><img src="img/icon/instar1.png" alt="instar" class="instar" /></a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;"><img src="img/icon/facebook1.png" alt="facebook" class="facebook" /></a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="javascript:;"><img src="img/icon/blog1.png" alt="blog" class="blog" /></a>
+              </div>
+            </li>
+          </ul>
+          <div class="foot_menu">
+            <ul>
+              <li><a href="javascript:;">회사소개</a></li>
+              <li><a href="javascript:;">광고제휴문의</a></li>
+              <li><a href="javascript:;">인사채용</a></li>
+              <li>
+                <a href="javascript:;"><span>개인정보처리방침</span></a>
+              </li>
+              <li><a href="javascript:;">청소년 보호 정책</a></li>
+              <li><a href="javascript:;">서비스 이용 약관</a></li>
+              <li><a href="javascript:;">위치정보이용약관</a></li>
+              <li><a href="javascript:;">사업자 정보확인</a></li>
+              <li><a href="javascript:;">전자금융거래 이용약관</a></li>
+              <li><a href="javascript:;">전자금융거래 이용자 유의사항</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot_text">
+          <p>
+            (주) 야놀자는 통신판매 중개자로서 통신판매의 당사자가 아니며 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.<br />
+            (주)야놀자가 소유/운영/관리하는 웹사이트 및 앱 내의 상품/판매자/이벤트 정보, 디자인 및 화면의 구성, UI를 포함하여 일체의 콘텐츠에 대한 무단 복제, 배포, 방송 또는 전송, 스크래핑 등의 행위는 저작권법 및 콘텐츠산업 진흥법 등 관련 법령에 의하여 엄격히 금지 됩니다.
+          </p>
+        </div>
+        <div class="foot_add">
+          <p>
+            (주)야놀자 대표이사 :이수진, 김종윤, 배보찬| 사업자 등록번호 :220-87-42885 통신판매업신고 :강남-14211호|
+            <em>메일 :help@yanolja.com</em>관광사업자 등록번호 :제2016-31호
+            <em>주소 :서울특별시 강남구 테헤란로108길 42</em>
+            호스팅서비스 제공자 :주식회사 야놀자고객센터 :1644-1346 (오전 9시 - 익일 새벽 3시)
+          </p>
+        </div>
+        <div class="top-button">
+          <a href="#"><img src="img/icon/top1.png" alt="top-button" /></a>
+        </div>
+      </div>
+      <div class="tp_footer">
+        <div class="tp_footer-wrap">
+          <div class="tp_foot_logo">
+            <a href="index.html"><img src="img/logo/footer_logo.png" alt="footer_logo" class="foot_logo" /></a>
+          </div>
+          <div class="tp_foot_sns">
+            <ul>
+              <li>
+                <a href="javascript:;"><img src="img/icon/twiter1.png" alt="twiter" class="twiter" /></a>
+              </li>
+              <li>
+                <a href="javascript:;"><img src="img/icon/instar1.png" alt="instar" class="instar" /></a>
+              </li>
+              <li>
+                <a href="javascript:;"><img src="img/icon/facebook1.png" alt="facebook" class="facebook" /></a>
+              </li>
+              <li>
+                <a href="javascript:;"><img src="img/icon/blog1.png" alt="blog" class="blog" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="tp_foot_menu">
+            <ul>
+              <li><a href="javascript:;">회사소개</a></li>
+              <li><a href="javascript:;">광고제휴문의</a></li>
+              <li><a href="javascript:;">인사채용</a></li>
+              <li>
+                <a href="javascript:;"><span>개인정보처리방침</span></a>
+              </li>
+              <li><a href="javascript:;">청소년 보호 정책</a></li>
+              <li><a href="javascript:;">서비스 이용 약관</a></li>
+              <li><a href="javascript:;">위치정보이용약관</a></li>
+              <li><a href="javascript:;">사업자 정보확인</a></li>
+              <li><a href="javascript:;">전자금융거래 이용약관</a></li>
+              <li id="fm-font">
+                <a href="javascript:;">전자금융거래 이용자 유의사항</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tp_foot_text">
+          <p>
+            (주) 야놀자는 통신판매 중개자로서 통신판매의 당사자가 아니며 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.<br />
+            (주)야놀자가 소유/운영/관리하는 웹사이트 및 앱 내의 상품/판매자/이벤트 정보, 디자인 및 화면의 구성, UI를 포함하여 일체의 콘텐츠에 대한 무단 복제, 배포, 방송 또는 전송, 스크래핑 등의 행위는 저작권법 및 콘텐츠산업 진흥법 등 관련 법령에 의하여 엄격히 금지 됩니다.
+          </p>
+        </div>
+        <div class="tp_foot_add">
+          <p>
+            (주)야놀자 대표이사 :이수진, 김종윤, 배보찬| 사업자 등록번호 :220-87-42885 통신판매업신고 :강남-14211호|
+            <em>메일 :help@yanolja.com</em>관광사업자 등록번호 :제2016-31호
+            <em>주소 :서울특별시 강남구 테헤란로108길 42</em>
+            호스팅서비스 제공자 :주식회사 야놀자고객센터 :1644-1346 (오전 9시 - 익일 새벽 3시)
+          </p>
+        </div>
+        <div class="tp_top-button">
+          <a href="#"><img src="img/icon/top1.png" alt="top-button" /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

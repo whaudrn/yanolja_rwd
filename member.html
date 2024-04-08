@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/member.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">
+        <a href="index.html"><img src="img/logo.jpg" alt="logo" /></a>
+      </h1>
+      <div class="back">
+        <a href="#"><img src="img/icon/back.png" onclick="goBack()" alt="back" /></a>
+      </div>
+    </header>
+
+    <div class="member">
+      <form action="member.php" method="post">
+        <fieldset>
+          <legend class="skip">회원가입</legend>
+          <p class="p1">회원가입하고 다양한 혜택을 누리세요!</p>
+          <p class="p2"><span>*</span>필수 입력 정보입니다.</p>
+
+          <div class="id">
+            <label for="id"
+              ><b>아이디<span>*</span></b></label
+            >
+            <input type="text" size="18" maxlength="16" autofocus id="id" required />
+            <input class="button1" type="button" value="중복확인" />
+          </div>
+
+          <div class="pw">
+            <label for="pw"
+              ><b>비밀번호<span>*</span></b></label
+            >
+            <input type="password" name="pw" id="pw" maxlength="16" autofocus placeholder="(8~16자의 영문,숫자,특수기호)" required />
+          </div>
+
+          <div class="pw2">
+            <label for="pw2"
+              ><b>비밀번호 재확인<span>*</span></b></label
+            >
+            <input type="password" name="pw2" id="pw2" maxlength="16" autofocus required />
+          </div>
+
+          <div class="name">
+            <label for="name"
+              ><b>이름(실명)<span>*</span></b></label
+            >
+            <input type="text" size="12" maxlength="16" autofocus id="name" required />
+          </div>
+
+          <div class="phone">
+            <label for="phone"
+              ><b>휴대전화<span>*</span></b></label
+            >
+            <input type="tel" maxlength="11" pattern="[0-9]{11}" required id="phone" />
+            
+          </div>
+
+          <div class="email">
+            <label for="email"
+              ><b>이메일<span>*</span></b></label
+            >
+            <input type="email" id="email" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="join">
+      <input type="submit" value="가입하기" />
+    </div>
+  </body>
+</html>

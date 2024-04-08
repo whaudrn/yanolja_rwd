@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/air.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <script>
+      function goBack(){
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="head">
+        <div class="back">
+           <img src="img/icon/back.png" onclick="goBack()" alt="back">
+        </div>
+      <h1>
+        <a href="index.html"><img src="img/logo/tp-logo.png" alt="logo" /></a>
+      </h1>
+    </div>
+      <div id="airplane-image">
+        <img src="img/airplane.png" alt="airplane-image" />
+      </div>
+      <div class="maintext">
+      <p class="slide-in1">설레는 여행의 즐거운 시작</p>
+      <p class="slide-in2"><span id="air-text">야놀자 항공</span></p>
+    </div>
+    </header>
+    <section>
+      <div class="ticket_check">
+        <div class="flights">
+          <div class="departures"><span>SEL</span><br />서울(인천/김포)</div>
+          <div class="reverse"><img src="img/icon/reverse.png" alt="reverse"></div>
+          <div class="destination"><span>도착지</span><br />도시 또는 공항</div>
+        </div>
+        <div class="date">출발일자와 도착일자를 입력해주세요.</div>
+        <div class="guestnumber">인원수</div>
+        <div class="seattype">좌석타입</div>
+      </div>
+      <div class="search">항공편 검색</div>
+      <div class="ticket_check_text">
+      <p>항공은 야놀자 회원만 예약할 수 있습니다.</p>
+      <a href="member_form.php">로그인하기</a>
+    </div>
+    </section>
+
+</html>

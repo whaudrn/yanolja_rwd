@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">
+        <a href="index.html"><img src="img/logo.jpg" alt="logo" /></a>
+      </h1>
+      <div class="back">
+        <a href="#"><img src="img/icon/back.png" onclick="goBack()" alt="back" /></a>
+      </div>
+    </header>
+    <div class="social">
+      <p>소셜로 간편하게 로그인 하세요.</p>
+      <ul class="sbox">
+        <li id="naver">
+          <a href="#"><img src="img/nlogin.png" alt="kakao" /></a>
+        </li>
+        <li id="kakao">
+          <a href="#"><img src="img/klogin.png" alt="kakao" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="login">
+      <h2>야놀자 로그인</h2>
+      <div class="login-box">
+        <form name="member_form" method="post" action="login.php">
+          <div class="id">
+            <label for="name">ID  </label><input type="text" id="name" name="id" />
+          </div>
+          <div class="password">
+            <label for="pwd">PASSWORD </label><input type="password" id="pwd" name="pass" />
+          </div>
+          <div class="submit">
+            <input type="submit" value="로그인" />
+          </div>
+          <div class="center">
+            <a href="member_conditions.html">회원가입</a>
+            <span>|</span>
+            <a href="id_screen.php" class="mm">아이디찾기</a>
+            <span>|</span>
+            <a href="pw_screen.php" class="mm">비밀번호찾기</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

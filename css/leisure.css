@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "NanumSquare", sans-serif;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 400px;
+}
+header {
+  text-align: center;
+  position: relative;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.back img {
+  width: 30px;
+  pointer-events: auto;
+}
+.back a {
+  width: 30px;
+  height: 30px;
+}
+
+h1 img {
+  margin-top: 15px;
+  width: 80px;
+}
+#leisure-image img {
+  width: 100%;
+}
+.maintext {
+  margin: 20px;
+}
+#leisure-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@keyframes slideIn1 {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in1 {
+  animation: slideIn1 1s ease forwards;
+}
+.slide-in2 {
+  animation: slideIn2 2s ease forwards;
+}
+.swiper-container{
+  width: 90%;
+  margin-top: 30px;
+}
+.swiper-slide{
+  text-align: center;
+}
+.ticket img {
+  width: 100%;
+  border-radius: 20px;
+}
+.swiper-container:hover .ticket-button .swiper-button-next {
+  opacity: 0.7;
+  right: 0px;
+}
+.swiper-container:hover .ticket-button .swiper-button-prev {
+  opacity: 0.7;
+  left: 0px;
+}
+
+.ticket-button .swiper-button-next {
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.ticket-button .swiper-button-prev {
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.leisure-icon ul {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.leisure-icon li {
+
+  width: 18%;
+  text-align: center;
+}
+.leisure-icon img {
+  width: 60%;
+  border: 1px solid #999999;
+  border-radius: 10px;
+}
+.leisure-icon a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: inherit;
+  font-weight: bold;
+}
+.brand {
+  margin-bottom: 30px;
+}
+.brand img {
+  width: 100%;
+  border: 1px solid #999999;
+  border-radius: 20px;
+}
+.brand a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: inherit;
+  font-weight: bold;
+}
+.swiper-container:hover .brand-button .swiper-button-next {
+  opacity: 0.7;
+  right: 0px;
+}
+.swiper-container:hover .brand-button .swiper-button-prev {
+  opacity: 0.7;
+  left: 0px;
+}
+
+.brand-button .swiper-button-next {
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.brand-button .swiper-button-prev {
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}

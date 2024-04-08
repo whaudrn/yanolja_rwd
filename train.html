@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/train.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <script>
+      function goBack(){
+        window.history.back();
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="head">
+        <div class="back">
+            <a href="#"><img src="img/icon/back.png" onclick="goBack()" alt="back"></a> 
+        </div>
+      <h1>
+        <a href="index.html"><img src="img/logo/tp-logo.png" alt="logo" /></a>
+      </h1>
+    </div>
+      <div id="train-image">
+        <img src="img/train.png" alt="train-image" />
+      </div>
+      <div class="maintext">
+      <p class="slide-in1">빠르고 편안한 기차여행</p>
+      <p class="slide-in2"><span id="train-text">야놀자 기차 예매</span></p>
+    </div>
+    </header>
+    <section>
+      <div class="ticket_check">
+        <div class="trains">
+          <div class="departures">출발역<br /><span>서울</span></div>
+          <div class="reverse"><img src="img/icon/reverse.png" alt="reverse"></div>
+          <div class="destination">도착역<br /><span>선택</span></div>
+        </div>
+        <div class="date">출발일자와 도착일자를 입력해주세요.</div>
+        <div class="guestnumber">인원수</div>
+        <div class="seattype">좌석타입</div>
+      </div>
+      <div class="search">승차권 조회</div>
+      <div class="ticket_check_text">
+      <p>train 및 기차는 야놀자 회원만 예약할 수 있습니다.</p>
+      <a href="member_form.php">로그인하기</a>
+    </div>
+    </section>
+  </body>
+</html>

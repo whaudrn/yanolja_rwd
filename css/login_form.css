@@ -1,0 +1,279 @@
+@charset "utf-8";
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 50%;
+  min-width: 420px;
+  max-width: 500px;
+  font-family: 'NanumSquare', sans-serif;
+  margin: 0 auto;
+}
+header {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+#logo {
+  text-align: center;
+  position: relative;
+  top: 5px;
+}
+#logo img {
+  width: 120px;
+}
+.back {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+}
+.back img {
+  width: 30px;
+}
+
+.login-wrap {
+  height: 700px;
+  background-color: #f8f4f4;
+}
+.social {
+  padding-top: 70px;
+  background-color: #f8f4f4;
+  height: 200px;
+}
+.sbox {
+  margin-top: 20px;
+}
+.social h2 {
+  text-align: center;
+}
+
+#naver {
+  position: relative;
+  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+}
+#naver img {
+  width: 100%;
+}
+#naver:before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skew(-25deg);
+}
+#naver:hover::before {
+  animation: shine 0.5s;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+#kakao {
+  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+}
+#kakao {
+  position: relative;
+}
+#kakao:before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  transform: skew(-25deg);
+}
+#kakao:hover::before {
+  animation: shine 0.5s;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+#kakao img {
+  width: 100%;
+}
+#naver img {
+  width: 100%;
+}
+.login {
+  background-color: #f8f4f4;
+  margin-top: 100px;
+  text-align: center;
+}
+.login h2 {
+  display: inline-block;
+  margin-top: 10px;
+}
+.id {
+   margin: 0 auto;
+  width: 70%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.id input {
+  width: 88%;
+  height: 30px;
+}
+.id label {
+  width: 10%;
+} 
+.id img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.password {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.password input {
+  width: 88%;
+  height: 30px;
+}
+.password label {
+  width: 10%;
+}
+.password img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.submit {
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 20px;
+}
+.submit input {
+  width: 100%;
+  background-color: #ff3479;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.center {
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+.tp_footer {
+  display: none;
+}
+.m_footer {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  background-color: #f2f2f2;
+}
+.foot_logo img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 180px;
+}
+.foot_sns ul {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.foot_sns ul li {
+  text-align: center;
+}
+.foot_sns img {
+  width: 30px;
+}
+.foot_menu {
+  width: 80%;
+  margin: 0 auto;
+}
+.foot_menu ul {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+.foot_menu ul li {
+  text-align: center;
+
+  width: 46%;
+  height: 46%;
+  border: 1px solid #999999;
+  padding: 5px 0;
+}
+.foot_menu a {
+  color: #999999;
+  font-size: 0.7rem;
+}
+.foot_menu span {
+  color: red;
+}
+.foot_text {
+  margin: 30px auto;
+  width: 80%;
+  font-size: 0.9rem;
+}
+.foot_add {
+  width: 75%;
+  margin: 50px auto;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.top-button {
+  position: relative;
+}
+.top-button img {
+  opacity: 0.7;
+  width: 30px;
+  position: absolute;
+  right: 0px;
+  bottom: 35px;
+  animation: topbutton 1.5s infinite linear;
+}
+.top-button:hover img {
+  opacity: 1;
+}
+
+@keyframes topbutton {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -60%);
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/bus.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <script>
+      function goBack(){
+        window.history.back();
+      }
+    </script>
+  
+  </head>
+  <body>
+    <header>
+        <div class="head">
+        <div class="back">
+            <a href="#"><img src="img/icon/back.png" onclick="goBack()" alt="back"></a> 
+        </div>
+      <h1>
+        <a href="index.html"><img src="img/logo/tp-logo.png" alt="logo" /></a>
+      </h1>
+    </div>
+      <div id="bus-image">
+        <img src="img/bus.png" alt="bus-image" />
+      </div>
+      <div class="maintext">
+      <p class="slide-in1">고속버스 예매 시스템 오픈</p>
+      <p class="slide-in2"><span id="bus-text">야놀자 고속버스 예매</span></p>
+    </div>
+    </header>
+    <section class="bus-ticketing">
+    <div id="ticketing-banner"><img src="img/busappdown.jpg" alt=""></div>
+    <div id="app-down"><a href="#">야놀자 APP 다운로드</a></div>
+   </section>   
+  </body>
+</html>

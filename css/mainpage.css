@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'NanumSquare', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 모바일 메인페이지 섹션 시작 */
+
+.filter {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 90%;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+.select-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.select-box select {
+  border: none;
+  border: 1px solid #999999;
+  color: #000;
+  border-radius: 10px;
+  width: 32%;
+  text-align: center;
+  padding: 5px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+.select-reset button {
+  position: absolute;
+  bottom: -35px;
+  right: 40px;
+  color: #999999;
+}
+.room {
+  /* border: 1px solid red; */
+  margin-top: 70px;
+  width: 90%;
+  margin-left: 5%;
+}
+.room ul {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.room ul li {
+  width: 49%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.room img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+.roomname {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.score-review {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0 10px 0;
+}
+.score {
+  display: flex;
+  align-items: center;
+}
+.score img {
+  margin-right: 2px;
+  width: 20px;
+}
+.select-reset {
+  cursor: pointer;
+  margin-left: auto;  
+  width: 65px;
+  text-align: end;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 5px;
+  color: #bbb7b7;
+  background: url(../img/icon/reset.png) no-repeat;
+  background-size: 15px;
+  background-position:  calc(100% - 47px) center;
+
+
+}
+.reset-wrap {
+  border: 1px solid red;
+  width: 20%;
+
+}
+/* tab 시작 */
+@media screen and (min-width: 641px) {
+  .select-reset button {
+    position: absolute;
+    bottom: -35px;
+    right: 60px;
+    color: #999999;
+  }
+  .room ul li {
+    width: 32%;
+  }
+}
+
+/* pc 시작 */
+
+@media screen and (min-width: 1050px) {
+  .select-box {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .room ul {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .room ul li {
+    width: 16%;
+  }
+}

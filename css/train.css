@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "NanumSquare", sans-serif;
+  margin: 0 auto;
+  width: 40%;
+  min-width: 400px;
+  
+}
+header {
+  text-align: center;
+  position: relative;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.back {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.back img {
+  width: 30px;
+  pointer-events: auto;
+}
+.back a {
+  width: 30px;
+  height: 30px;
+}
+
+h1 img {
+  margin-top: 15px;
+  width: 80px;
+}
+#train-image img{
+  width: 100%;
+}
+.maintext {
+  margin: 20px;
+}
+#train-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+@keyframes slideIn1 {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in1 {
+  animation: slideIn1 1s ease forwards;
+}
+.slide-in2 {
+  animation: slideIn2 2s ease forwards;
+}
+.ticket_check {
+  /* border: 1px dotted red; */
+  width: 100%;
+  text-align: center;
+}
+.trains {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #e2dcdf;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.reverse img {
+  width: 40px;
+  opacity: 0.7;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.reverse img:hover {
+  opacity: 1;
+}
+.departures span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.departures {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.destination span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e2dcdf;
+ }
+.destination {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.date {
+  width: 90%;
+  margin: 10px;
+  margin-left: 5%;
+  border: 1px solid #e2dcdf;
+  height: 50px;
+  border-radius: 15px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.guestnumber {
+  width: 90%;
+  margin: 10px;
+  margin-left: 5%;
+  border: 1px solid #e2dcdf;
+  height: 50px;
+  border-radius: 15px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.seattype {
+  width: 90%;
+  margin: 10px;
+  margin-left: 5%;
+  border: 1px solid #e2dcdf;
+  height: 50px;
+  border-radius: 15px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.search {
+  width: 70%;
+  margin-top: 150px;
+  margin-left: 15%;
+  border: none;
+  background-color: #ff3e72;
+  height: 40px;
+  border-radius: 15px;
+  line-height: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.ticket_check_text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
